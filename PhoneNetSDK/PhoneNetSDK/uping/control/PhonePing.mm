@@ -135,7 +135,7 @@
             index++;
         }
         usleep(1000*500);
-    } while (!self.isStopPingThread && index < _pingPacketCount && isReceiverRemoteIpPingRes);
+    } while (!self.isStopPingThread && index < _pingPacketCount);
     
     if (index == _pingPacketCount) {
         log4cplus_debug("PhoneNetPing", "ping complete..\n");
